@@ -22,13 +22,17 @@ servidor MCP conectado.
   mcp.json                  ← Servidor MCP de GitHub conectado (issues, PRs, repos)
 specs/
   base-context.md           ← Contexto funcional completo de la app (para dar de una vez a un agente)
-  export-csv.md             ← Spec de una feature real, lista para ejecutar spec-driven development
+  export-csv.md             ← Spec de una feature real, para practicar con Agent Mode en VS Code (local)
+  priority-sort.md          ← Spec de una feature real, para practicar con Copilot coding agent (nube)
 ```
 
-**`specs/export-csv.md`** es el ejemplo más directo: es una spec completa (contexto, objetivo, restricciones,
-criterios de aceptación) de una feature que **todavía no está implementada** en este código. Sirve para practicar
-el flujo completo: convertir la spec en un Issue de GitHub, asignárselo a Copilot coding agent (o resolverlo con
-Agent Mode en VS Code usando la spec como contexto), y revisar el PR resultante con `review-agent`.
+Ninguna de las dos specs (`export-csv.md`, `priority-sort.md`) está implementada en este código — ambas están
+listas para convertirse en un Issue y resolverse. Sirven para practicar el flujo completo: convertir la spec en
+un Issue de GitHub, resolverlo con Agent Mode en VS Code o asignárselo a Copilot coding agent, y revisar el PR
+resultante con `review-agent`.
+
+> Si vas a asignarle un Issue a Copilot coding agent, hacelo sobre tu propio fork — necesitás permiso de escritura
+> sobre el repo para que el agente pueda abrir el PR ahí.
 
 ## Stack
 
