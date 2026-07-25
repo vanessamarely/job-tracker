@@ -18,6 +18,8 @@ servidor MCP conectado.
   skills/
     review-pr/SKILL.md      ← Skill invocable para revisar un PR
     write-tests/SKILL.md    ← Skill invocable para generar tests
+  hooks/
+    safety.json             ← Hook preToolUse: bloquea comandos destructivos (rm -rf, DROP TABLE, push --force)
 .vscode/
   mcp.json                  ← Servidor MCP de GitHub conectado (issues, PRs, repos)
 specs/

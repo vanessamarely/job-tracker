@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "hooks": {
+    "preToolUse": [
+      {
+        "type": "command",
+        "bash": "if grep -qE 'rm -rf|DROP TABLE|git push --force' <<< \"$TOOL_ARGS\"; then echo '{\"allowed\": false}'; exit 1; fi; echo '{\"allowed\": true}'",
+        "powershell": "if ($env:TOOL_ARGS -match 'rm -rf|DROP TABLE|git push --force') { @{allowed=$false} | ConvertTo-Json; exit 1 } else { @{allowed=$true} | ConvertTo-Json }",
+        "timeoutSec": 5
+      }
+    ]
+  }
+}
