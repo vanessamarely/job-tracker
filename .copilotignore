@@ -1,8 +1,0 @@
-# Excluye archivos sensibles del contexto de Copilot
-.env
-.env.local
-.env.production
-*.db
-*.sqlite
-node_modules/
-.next/
